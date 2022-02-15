@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.kizitonwose.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cv_dayViewResource="@layout/dates_layout"
+        app:cv_orientation="horizontal"
+        app:cv_outDateStyle="endOfGrid"
+        app:cv_inDateStyle="firstMonth"
+        app:cv_scrollMode="paged"
+        app:cv_wrappedPageHeightAnimationDuration="@integer/material_motion_duration_long_1"
+        app:cv_monthHeaderResource="@layout/calendar_month_header_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
